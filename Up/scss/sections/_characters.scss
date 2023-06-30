@@ -1,0 +1,51 @@
+@use "../custom" as *;
+
+.characters {
+  position: relative;
+
+  &__content {
+    margin-top: 0;
+    padding: 1rem;
+
+    p {
+      font-size: 0.8rem;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 2rem;
+
+      &-first {
+        margin-top: 4rem;
+      }
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      color: $horn;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+
+    &-1 {
+      width: 25rem;
+    }
+
+    &-2 {
+      width: 30rem;
+    }
+
+    &-3 {
+      width: 25rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.comments {
+  background-color: $gray-200;
+}
+
+.cta-info {
+  margin: 1rem 0;
+  padding: 2rem 2rem 0 2rem;
+
+  &__list {
+    display: block;
+    list-style-type: none;
+    position: relative;
+  }
+}

@@ -1,0 +1,24 @@
+//GRADIENT MIXIN//
+@mixin gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(94, 13, 44, 1) 30%,
+    rgba(27, 28, 93, 1) 70%
+  );
+}
+
+//ABSOLUTE CENTER//
+
+@mixin absolutecenter {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//TRANSITION//
+
+@mixin transitionproperty {
+  transition-duration: 1000ms;
+  transition-property: all;
+}

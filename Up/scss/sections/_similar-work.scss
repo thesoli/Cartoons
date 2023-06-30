@@ -1,0 +1,14 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.similar-work {
+  position: relative;
+
+  img {
+    padding-bottom: 2rem;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+  }
+}

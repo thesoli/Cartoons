@@ -1,0 +1,26 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+  @include gradient;
+  min-height: 60px;
+  @include media-breakpoint-up(lg) {
+    height: 60px;
+  }
+
+  img {
+    position: absolute;
+    width: 60px;
+    top: 0;
+  }
+
+  li {
+    padding: 0 0.5rem;
+  }
+
+  a {
+    color: $white;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
